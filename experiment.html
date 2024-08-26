@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js plugins/tabulous.js-master/demo/src/tabulous.css"></head>
+    <style>
+        .tabs-1{
+            background: red !important;
+        }
+        #tabs_container{
+            height: 400px !important;
+            background: red;
+            overflow: visible ;
+        }
+    </style>
+<body>
+    <div class="container p-5">
+        <div id="tabs">
+            <ul>
+                  <li><a href="#tabs-1" title="">Tab 1</a></li>
+                  <li><a href="#tabs-2" title="">Tab 2</a></li>
+                  <li><a href="#tabs-3" title="">Tab 3</a></li>
+              </ul>
+              <div id="tabs_container">
+                  <div id="tabs-1">
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore accusantium molestias ipsam nulla labore nobis ducimus repellendus libero earum omnis eligendi ea harum facilis enim, quos neque officia odio deserunt.
+                  </div>
+                  <div id="tabs-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia veritatis, ipsam ad porro et laboriosam? Aliquid possimus magni recusandae suscipit, nihil magnam, facere, molestias distinctio voluptatem commodi quas blanditiis voluptates?
+                  </div>
+                  <div id="tabs-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum delectus quasi eos. Totam nam hic, sint velit quod at nihil ipsa cum provident! Alias, maiores sapiente. Laudantium ratione aperiam molestiae!
+                  </div>
+              </div><!--End tabs container-->	
+        </div><!--End tabs-->
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js plugins/tabulous.js-master/demo/src/tabulous.js"></script>
+    <script>
+        console.log($);
+        
+        $(document).ready(function ($) {
+            $('#tabs').tabulous();  
+        });
+    </script>
+</body>
+</html>
